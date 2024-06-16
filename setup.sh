@@ -17,11 +17,6 @@ sudo systemctl enable getty@tty1 getty@tty2 getty@tty3
 sudo cp grub /etc/default/grub
 sudo update-grub
 
-#Download Envy
-curl -O -L https://cdn.discordapp.com/attachments/1175399709880361132/1185309816361599039/beta2.zip?ex=65b40eca&is=65a199ca&hm=bf5b08fd37521b5662203ad20480cdb36b1595cb67288ffd8fef6920691a4b7d& 
-sleep 3
-unzip beta2.zip* -d ..
-
 #install kiosh service
 sudo cp kiosk.sh /opt/
 sudo chmod +x /opt/kiosk.sh
@@ -33,4 +28,7 @@ sudo systemctl start kiosk.service
 cd ..
 sudo rm -rf envy-ubuntu
 
+#reboot system
+echo Rebooting in 3 sec...
+sleep 3
 sudo reboot
