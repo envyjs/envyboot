@@ -10,7 +10,7 @@
 * 100Mbps internet or better
 
 ### Ubuntu Installation
-* Install Bbuntu Server 22.04 
+* Install Ubuntu Server 22.04 
 * Choose full install when prompted
 * Use the following settings:
 ````
